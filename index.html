@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style2.css">
+<style>
+@media screen and (max-width: 600px){
+body{
+background-image: url('123.png');
+ background-repeat: no-repeat;
+background-size: 1360px ;
+background-color:rgb(252,248,245);
+}
+</style>
+</head>
+<body>
+  <ul>
+  <li><a class="active" href="#">Home</a></li>
+  <li><a href="form.html">Subscribe</a></li>
+  <li><a href="about.html">About Us </a></li>
+</ul>
+  <section>
+
+    <div class="container initial">
+      <h1 class="brand">Recipe <span class="type"></span></h1>
+      <form>
+        <input type="text" placeholder="Enter your main ingredient and Search...">
+        <ion-icon name="search"></ion-icon>
+      </form>
+      <div class="search-result">
+
+      </div>
+    </div>
+  </section>
+  <div class="footer">
+  <p><strong><i>-> SUBSCRIBE FOR OUR WEEKLY UPDATES <-</i></strong></p>
+</div>
+  <script src="./typed.min.js"></script>
+  <script>
+  var typed = new Typed('.type', {
+    strings: ['Search' , 'App' ,'Finder'],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: true
+  });
+  </script>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <script src="./main.js"></script>
+  <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
